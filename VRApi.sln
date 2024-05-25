@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34814.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRApi", "VRApi\VRApi.csproj", "{84963628-EBDA-4B79-824F-91F6190F990F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84963628-EBDA-4B79-824F-91F6190F990F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84963628-EBDA-4B79-824F-91F6190F990F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84963628-EBDA-4B79-824F-91F6190F990F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84963628-EBDA-4B79-824F-91F6190F990F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAF7B029-656D-4023-A2A4-41CC296F56EA}
+	EndGlobalSection
+EndGlobal
