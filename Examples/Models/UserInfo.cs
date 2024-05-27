@@ -2,26 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Serialization;
+using JsonUtility;
 using System.Threading.Tasks;
 
 namespace VRClient.Models
 {
+	[Serializable]
     public class UserInfo
     {
-        [JsonPropertyName("id")]
-        public string Id { get; set; }
+        public string id { get; set; }
 
-        [JsonPropertyName("username")]
-        public string Username { get; set; }
+        public string username { get; set; }
 
-        [JsonPropertyName("email")]
-        public string Email { get; set; }
+        public string email { get; set; }
 
-        [JsonPropertyName("emailConfirmed")]
-        public bool EmailConfirmed { get; set; }
+        public bool emailConfirmed { get; set; }
 
-        [JsonPropertyName("roles")]
-        public IEnumerable<string> Roles { get; set; }
+        public IEnumerable<string> roles { get; set; }
     }
 }

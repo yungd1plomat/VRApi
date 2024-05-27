@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
-using System.Text.Json;
+using JsonUtility;
 using System.Threading.Tasks;
 using VRClient.Abstractions;
 using VRClient.Models;
@@ -47,8 +47,8 @@ namespace VRClient.Impls
             var url = $"{BaseUrl}/api/user/getme";
             var response = await _httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();
-            var content = await response.Content.ReadAsStreamAsync();
-            var userInfo = await JsonSerializer.DeserializeAsync<UserInfo>(content);
+            var content = await response.Content.ReadAsStringAsync();
+            var userInfo = await JsonUtility.FromJson<UserInfo>(content);
             return userInfo;
         }
     }
