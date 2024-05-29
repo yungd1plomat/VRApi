@@ -26,12 +26,12 @@ namespace VRClient.Impls
         public async Task AuthAsync(string username, string password)
         {
             var url = $"{BaseUrl}/api/user/login";
-            var body = new
+            var body = new LoginData()
             {
-                username,
-                password
+                username = username,
+                password = password
             };
-            var json = JsonSerializer.Serialize(body);
+            var json = JsonUtility.ToJson(body);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await _httpClient.PostAsync(url, content);
             response.EnsureSuccessStatusCode();
